@@ -371,7 +371,7 @@ EventID 识别规则：
             {"role": "user", "content": user_input}
         ]
         
-        self._log(f"用户输入: {user_input}")
+        self._log(message=f"用户输入: {user_input}")
         self._log(f"使用模型: {self.model}")
         
         # Agent 循环：持续调用工具直到完成分析
@@ -470,7 +470,7 @@ async def main():
         print("=" * 60)
         
         try:
-            report = await agent.analyze(user_input)
+            report: AnalysisReport = await agent.analyze(user_input)
             
             print("\n" + "=" * 60)
             print("📊 分析报告:")

@@ -1,4 +1,12 @@
+# 注意: browser-use 需要 Python >= 3.11
+# 请使用 Python 3.11+ 创建虚拟环境
+
 openai>=1.0.0
 pydantic>=2.0.0
 python-dotenv>=1.0.0
 requests>=2.28.0
+
+# Browser-Use 依赖
+browser-use>=0.7.0
+langchain-openai>=0.3.0
+playwright>=1.40.0
